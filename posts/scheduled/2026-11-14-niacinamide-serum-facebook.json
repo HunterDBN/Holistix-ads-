@@ -3,5 +3,14 @@
   "text": "Hello, fresh-faced you. 🌼\n\nNiacinamide 5% Serum is a revitalizing serum made for all skin types, with niacinamide, hyaluronic acid and peptides. An easy add to your morning or evening routine. $60 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Niacinamide #Serum #SkincareRoutine #SelfCare #HealEvolveThrive",
   "image": "https://export-download.canva.com/nuxhs/DAHa4Anuxhs/-1/0/0001-1454058911533373656.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261113T134923Z&X-Amz-Expires=73611&X-Amz-Signature=e9edc0c910e0debb04840d3325c78b96ee82461d365bfd52824822aa709271d3&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2010%3A16%3A14%20GMT",
   "canvaDesign": "https://www.canva.com/d/BNS7RSM0SDWtxiD",
-  "dueAt": "2026-11-14T16:00:00-05:00"
+  "dueAt": "2026-11-14T16:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6af8210abb36d00909fb0a06",
+      "dueAt": "2026-11-14T21:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T08:51:22.238Z"
 }

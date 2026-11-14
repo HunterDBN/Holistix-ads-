@@ -3,5 +3,14 @@
   "text": "Your evening glow ritual. 🕯️\n\n1% Retinol Serum, made for your nighttime skincare routine. $98.50 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Retinol #NightRoutine #Skincare #SelfCare #HealEvolveThrive",
   "image": "https://export-download.canva.com/XbNaw/DAHa4AXbNaw/-1/0/0001-1214242232204675873.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261113T230346Z&X-Amz-Expires=41401&X-Amz-Signature=75e7ff892b89c52f5528b66e13efefb025312caf956f0b3ec608f4a9e5b5943b&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2010%3A33%3A47%20GMT",
   "canvaDesign": "https://www.canva.com/d/2ZcjhZE4wFRM2Kw",
-  "dueAt": "2026-11-15T09:00:00-05:00"
+  "dueAt": "2026-11-15T09:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6af8210bd8bd2962e4196ac3",
+      "dueAt": "2026-11-15T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T08:51:23.320Z"
 }

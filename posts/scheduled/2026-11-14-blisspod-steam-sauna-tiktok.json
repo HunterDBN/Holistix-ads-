@@ -1,7 +1,16 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Your personal spa, at home. 🌿\n\nThe Blisspod Portable Steam Sauna gives you full-body steam in minutes, then folds away when you're done. Now $249 CAD (was $329).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #SteamSauna #SelfCare #WellnessAtHome #HealEvolveThrive",
   "image": "https://export-download.canva.com/70HUE/DAHa4B70HUE/-1/0/0001-895612556832556219.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261113T195227Z&X-Amz-Expires=52742&X-Amz-Signature=31180e142c341d956c5e7e7d60c607bffd25780609b9ced3125f0a94a74fb286&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2010%3A31%3A29%20GMT",
   "canvaDesign": "https://www.canva.com/d/OObDDsmdVMwRhFN",
-  "dueAt": "2026-11-14T19:00:00-05:00"
+  "dueAt": "2026-11-14T19:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6af82109d8bd2962e4196a51",
+      "dueAt": "2026-11-15T00:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T08:51:21.821Z"
 }
