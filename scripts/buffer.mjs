@@ -140,6 +140,10 @@ async function cmdSchedule(dryRun) {
           mode: enumValue(post.dueAt ? "customScheduled" : "addToQueue"),
           ...(post.dueAt && { dueAt: new Date(post.dueAt).toISOString() }),
           ...(images.length && { assets: images.map((img) => ({ image: { url: publicImageUrl(img) } })) }),
+          // Facebook (and Instagram) need a post type: post, story or reel. Defaults to a feed post.
+          ...(["facebook", "instagram"].includes(channel.service) && {
+            metadata: { [channel.service]: { type: enumValue(post.type || "post") } },
+          }),
         };
         const when = input.dueAt ? `at ${input.dueAt}` : "to the next queue slot";
         if (dryRun) {
