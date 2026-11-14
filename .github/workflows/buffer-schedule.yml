@@ -1,0 +1,44 @@
+name: Buffer - schedule posts
+
+# Sends every post in posts/queue/ to Buffer, then moves it to posts/scheduled/
+# so it is never sent twice. Runs when queue files land on main, or by hand.
+on:
+  push:
+    branches: [main]
+    paths: ["posts/queue/**"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (show what would be scheduled, send nothing)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: buffer-schedule
+  cancel-in-progress: false
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Schedule queued posts
+        run: node scripts/buffer.mjs schedule ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_ORGANIZATION_ID: ${{ vars.BUFFER_ORGANIZATION_ID }}
+      - name: Record scheduled posts
+        if: ${{ always() && !inputs.dry_run }}
+        run: |
+          git add -A posts
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Move posts sent to Buffer into posts/scheduled [skip ci]"
+          git push

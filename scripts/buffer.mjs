@@ -1,0 +1,180 @@
+#!/usr/bin/env node
+// Buffer API helper for Holistix ads. No dependencies (Node 20+).
+//
+//   node scripts/buffer.mjs channels             List organizations and connected channels
+//   node scripts/buffer.mjs schedule [--dry-run] Send every post in posts/queue/ to Buffer
+//
+// The API key is read from BUFFER_ACCESS_TOKEN (GitHub Actions secret, or a local
+// gitignored .env file). It is never printed.
+
+import { readFileSync, readdirSync, writeFileSync, renameSync, existsSync, mkdirSync } from "node:fs";
+import { join, dirname, basename } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
+const QUEUE_DIR = join(ROOT, "posts", "queue");
+const DONE_DIR = join(ROOT, "posts", "scheduled");
+const API_URL = "https://api.buffer.com";
+
+loadDotEnv();
+const TOKEN = process.env.BUFFER_ACCESS_TOKEN;
+
+function loadDotEnv() {
+  const file = join(ROOT, ".env");
+  if (!existsSync(file)) return;
+  for (const line of readFileSync(file, "utf8").split(/\r?\n/)) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=\s*(.*)\s*$/);
+    if (m && !process.env[m[1]]) process.env[m[1]] = m[2].replace(/^["']|["']$/g, "");
+  }
+}
+
+async function gql(query, variables = {}) {
+  if (!TOKEN) fail("BUFFER_ACCESS_TOKEN is not set. Add it as a GitHub Actions secret or in a local .env file.");
+  const res = await fetch(API_URL, {
+    method: "POST",
+    headers: { Authorization: `Bearer ${TOKEN}`, "Content-Type": "application/json" },
+    body: JSON.stringify({ query, variables }),
+  });
+  const body = await res.text();
+  let json;
+  try { json = JSON.parse(body); } catch { fail(`Buffer API returned HTTP ${res.status}: ${body.slice(0, 300)}`); }
+  if (!res.ok || json.errors?.length) {
+    fail(`Buffer API error (HTTP ${res.status}): ${JSON.stringify(json.errors ?? json).slice(0, 500)}`);
+  }
+  return json.data;
+}
+
+function fail(msg) {
+  console.error(`✗ ${msg}`);
+  process.exit(1);
+}
+
+async function getOrganizations() {
+  const data = await gql(`query { account { organizations { id name } } }`);
+  return data.account.organizations;
+}
+
+async function getChannels(organizationId) {
+  const data = await gql(
+    `query { channels(input: { organizationId: ${JSON.stringify(organizationId)} }) {
+       id name displayName service isQueuePaused
+     } }`,
+  );
+  return data.channels;
+}
+
+async function resolveOrganization() {
+  if (process.env.BUFFER_ORGANIZATION_ID) return process.env.BUFFER_ORGANIZATION_ID;
+  const orgs = await getOrganizations();
+  if (!orgs.length) fail("This Buffer account has no organizations.");
+  return orgs[0].id;
+}
+
+async function cmdChannels() {
+  const orgs = await getOrganizations();
+  console.log(`✓ Buffer API key works. ${orgs.length} organization(s):`);
+  for (const org of orgs) {
+    console.log(`\n${org.name}  (organization id: ${org.id})`);
+    const channels = await getChannels(org.id);
+    if (!channels.length) console.log("  (no channels connected)");
+    for (const c of channels) {
+      const paused = c.isQueuePaused ? "  [queue paused]" : "";
+      console.log(`  - ${c.service.padEnd(10)} ${c.displayName || c.name}  (channel id: ${c.id})${paused}`);
+    }
+  }
+}
+
+// Serialize a JS value as a GraphQL input literal. Values wrapped in enumValue() stay unquoted.
+const ENUM = Symbol("enum");
+const enumValue = (v) => ({ [ENUM]: v });
+function toGraphQL(v) {
+  if (v && v[ENUM]) return v[ENUM];
+  if (Array.isArray(v)) return `[${v.map(toGraphQL).join(", ")}]`;
+  if (v && typeof v === "object") return `{ ${Object.entries(v).map(([k, x]) => `${k}: ${toGraphQL(x)}`).join(", ")} }`;
+  return JSON.stringify(v);
+}
+
+// Turn a repo-relative image path into a public raw.githubusercontent.com URL.
+function publicImageUrl(image) {
+  if (/^https?:\/\//.test(image)) return image;
+  const repo = process.env.GITHUB_REPOSITORY || "HunterDBN/Holistix-ads-";
+  const ref = process.env.GITHUB_SHA || "main";
+  const path = image.replace(/^\.?\//, "").split("/").map(encodeURIComponent).join("/");
+  return `https://raw.githubusercontent.com/${repo}/${ref}/${path}`;
+}
+
+function pickChannel(channels, wanted) {
+  const w = String(wanted).toLowerCase();
+  const matches = channels.filter(
+    (c) => c.id === wanted || c.service.toLowerCase() === w || (c.name || "").toLowerCase() === w || (c.displayName || "").toLowerCase() === w,
+  );
+  if (matches.length === 1) return matches[0];
+  if (!matches.length) throw new Error(`no Buffer channel matches "${wanted}". Run "channels" to see the options.`);
+  throw new Error(`"${wanted}" matches ${matches.length} channels; use the channel id instead.`);
+}
+
+async function cmdSchedule(dryRun) {
+  if (!existsSync(QUEUE_DIR)) return console.log("No posts/queue folder; nothing to schedule.");
+  const files = readdirSync(QUEUE_DIR).filter((f) => f.endsWith(".json")).sort();
+  if (!files.length) return console.log("posts/queue is empty; nothing to schedule.");
+
+  const channels = await getChannels(await resolveOrganization());
+  mkdirSync(DONE_DIR, { recursive: true });
+  let failures = 0;
+
+  for (const file of files) {
+    const path = join(QUEUE_DIR, file);
+    try {
+      const post = JSON.parse(readFileSync(path, "utf8"));
+      if (!post.text) throw new Error('missing "text"');
+      const targets = [].concat(post.channels ?? post.channel ?? []);
+      if (!targets.length) throw new Error('missing "channel" (for example "facebook" or "tiktok")');
+      const images = [].concat(post.images ?? post.image ?? []);
+
+      for (const target of targets) {
+        const channel = pickChannel(channels, target);
+        const input = {
+          text: post.text,
+          channelId: channel.id,
+          schedulingType: enumValue("automatic"),
+          mode: enumValue(post.dueAt ? "customScheduled" : "addToQueue"),
+          ...(post.dueAt && { dueAt: new Date(post.dueAt).toISOString() }),
+          ...(images.length && { assets: images.map((img) => ({ image: { url: publicImageUrl(img) } })) }),
+        };
+        const when = input.dueAt ? `at ${input.dueAt}` : "to the next queue slot";
+        if (dryRun) {
+          console.log(`• [dry run] ${file} → ${channel.service} (${channel.displayName || channel.name}) ${when}`);
+          continue;
+        }
+        const data = await gql(
+          `mutation { createPost(input: ${toGraphQL(input)}) {
+               ... on PostActionSuccess { post { id dueAt } }
+               ... on MutationError { message }
+             } }`,
+        );
+        const result = data.createPost;
+        if (result.message) throw new Error(`Buffer refused the post: ${result.message}`);
+        console.log(`✓ ${file} → ${channel.service} ${when} (Buffer post ${result.post.id}, due ${result.post.dueAt})`);
+        (post.buffer ??= []).push({ channel: channel.service, channelId: channel.id, postId: result.post.id, dueAt: result.post.dueAt });
+      }
+
+      if (!dryRun) {
+        post.scheduledAt = new Date().toISOString();
+        writeFileSync(path, JSON.stringify(post, null, 2) + "\n");
+        renameSync(path, join(DONE_DIR, basename(file)));
+      }
+    } catch (err) {
+      failures++;
+      console.error(`✗ ${file}: ${err.message}`);
+    }
+  }
+  if (failures) process.exit(1);
+}
+
+const [cmd, ...args] = process.argv.slice(2);
+if (cmd === "channels") await cmdChannels();
+else if (cmd === "schedule") await cmdSchedule(args.includes("--dry-run"));
+else {
+  console.log("Usage: node scripts/buffer.mjs <channels|schedule> [--dry-run]");
+  process.exit(cmd ? 1 : 0);
+}
