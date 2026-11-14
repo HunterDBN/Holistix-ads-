@@ -4,6 +4,8 @@ name: Buffer - check connection
 # and to see the ids of every channel connected in Buffer.
 on:
   workflow_dispatch:
+  pull_request:
+    paths: ["scripts/buffer.mjs", ".github/workflows/buffer-*.yml"]
 
 permissions:
   contents: read
