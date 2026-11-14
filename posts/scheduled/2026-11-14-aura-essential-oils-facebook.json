@@ -2,5 +2,14 @@
   "channel": "facebook",
   "text": "Breathe in the good stuff. 🌿🍊\n\nAURA Essential Oils come in Peppermint, Lavender, Orange & Grapefruit, Eucalyptus and our Aura Signature blend. 1 oz bottles for diffusers, aromatherapy and more. From $37 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #EssentialOils #Aromatherapy #SelfCare #HealEvolveThrive",
   "image": "https://export-download.canva.com/hJuok/DAHa38hJuok/-1/0/0001-9212635165524992351.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261113%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261113T215254Z&X-Amz-Expires=41047&X-Amz-Signature=1eb587d0213e81ba164eabf00c9cff1bcd35db4fa565e6697b65cb5ea5e46a3f&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2009%3A17%3A01%20GMT",
-  "canvaDesign": "https://www.canva.com/d/RF5njEIuxK2QyYd"
+  "canvaDesign": "https://www.canva.com/d/RF5njEIuxK2QyYd",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6af8159fbb36d00909f7b3ce",
+      "dueAt": "2026-11-15T02:51:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T08:02:39.530Z"
 }
