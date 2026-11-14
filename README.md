@@ -27,6 +27,7 @@ Ad creatives for Holistix Health, with posting to any channel connected in Buffe
 | `channel` | Required. A service name (`facebook`, `tiktok`, `twitter`…), a channel name, or a channel id. Use `channels` (a list) to post to several at once. Only channels connected in Buffer work: run the check-connection workflow to see them. |
 | `text` | The post copy. |
 | `image` / `images` | A path in this repo or a public URL. |
+| `type` | Facebook/Instagram only: `post` (default), `story` or `reel`. |
 | `dueAt` | Optional exact time (ISO 8601 with time zone). Leave it out to add the post to the next open slot in your Buffer queue. |
 
 3. Commit to `main`. The **Buffer - schedule posts** workflow sends each queued file to Buffer and moves it to `posts/scheduled/` with the Buffer post id, so nothing is posted twice. You can also run that workflow by hand with **Dry run** ticked to preview.
