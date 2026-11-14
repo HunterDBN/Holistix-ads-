@@ -127,7 +127,8 @@ async function cmdSchedule(dryRun) {
     try {
       const post = JSON.parse(readFileSync(path, "utf8"));
       if (!post.text) throw new Error('missing "text"');
-      const targets = [].concat(post.channels ?? post.channel ?? "twitter");
+      const targets = [].concat(post.channels ?? post.channel ?? []);
+      if (!targets.length) throw new Error('missing "channel" (for example "facebook" or "tiktok")');
       const images = [].concat(post.images ?? post.image ?? []);
 
       for (const target of targets) {

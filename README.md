@@ -1,6 +1,6 @@
 # Holistix-ads-
 
-Ad creatives for Holistix Health, with posting to X (and any other channel connected in Buffer) through the [Buffer API](https://developers.buffer.com).
+Ad creatives for Holistix Health, with posting to any channel connected in Buffer through the [Buffer API](https://developers.buffer.com).
 
 ## One-time setup
 
@@ -15,7 +15,7 @@ Ad creatives for Holistix Health, with posting to X (and any other channel conne
 
 ```json
 {
-  "channel": "twitter",
+  "channel": "facebook",
   "text": "EvenSkyn Lumo+ now $499.99 CAD. Shop at holistixhealth.ca",
   "image": "creatives/lumo-plus.png",
   "dueAt": "2026-11-20T15:00:00-05:00"
@@ -24,7 +24,7 @@ Ad creatives for Holistix Health, with posting to X (and any other channel conne
 
 | Field | Meaning |
 | --- | --- |
-| `channel` | A service name (`twitter`, `instagram`, `facebook`…), a channel name, or a channel id. Use `channels` for several at once. Defaults to `twitter`. |
+| `channel` | Required. A service name (`facebook`, `tiktok`, `twitter`…), a channel name, or a channel id. Use `channels` (a list) to post to several at once. Only channels connected in Buffer work: run the check-connection workflow to see them. |
 | `text` | The post copy. |
 | `image` / `images` | A path in this repo or a public URL. |
 | `dueAt` | Optional exact time (ISO 8601 with time zone). Leave it out to add the post to the next open slot in your Buffer queue. |
