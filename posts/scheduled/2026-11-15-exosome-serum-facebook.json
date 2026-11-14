@@ -3,5 +3,14 @@
   "text": "Skin that bounces back. 🤍\n\nExosome Skin Repair Serum, $82 CAD. Plant-based exosomes, ceramides and hyaluronic acid for firm, radiant-looking skin.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Exosomes #Skincare #GlowingSkin #SelfCare #HealEvolveThrive",
   "image": "https://export-download.canva.com/vyR6U/DAHa5KvyR6U/-1/0/0001-8354699458822942440.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261114T113802Z&X-Amz-Expires=8977&X-Amz-Signature=5622293a67c665531bc3760c746b2d6bf11e019bb588bcfce47fe4c6c355c508&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2014%3A07%3A39%20GMT",
   "canvaDesign": "https://www.canva.com/d/xqbHoErFuqnuCqn",
-  "dueAt": "2026-11-15T19:00:00-05:00"
+  "dueAt": "2026-11-15T19:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6af85874e5a113497a82098a",
+      "dueAt": "2026-11-16T00:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T12:47:49.093Z"
 }

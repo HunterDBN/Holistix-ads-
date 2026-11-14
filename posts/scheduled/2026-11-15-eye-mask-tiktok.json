@@ -1,7 +1,16 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Wake up looking rested. ✨\n\nHydrating Eye Mask, 5 pairs for $45 CAD. Soothes, plumps and refreshes tired eyes.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #EyeMask #Skincare #SelfCare #MorningRoutine #HealEvolveThrive",
   "image": "https://export-download.canva.com/G5nG0/DAHa5KG5nG0/-1/0/0001-948529871338309397.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261114T073650Z&X-Amz-Expires=24607&X-Amz-Signature=0663c72a47c2ad296def19d0bcfa379b7da9323bcb60bce649d043b801263bc5&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2014%3A26%3A57%20GMT",
   "canvaDesign": "https://www.canva.com/d/CRxsKaUuDcOn-WN",
-  "dueAt": "2026-11-15T12:00:00-05:00"
+  "dueAt": "2026-11-15T12:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6af8587576c23bf1c7166414",
+      "dueAt": "2026-11-15T17:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T12:47:50.028Z"
 }

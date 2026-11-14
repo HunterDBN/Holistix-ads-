@@ -1,7 +1,16 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Unwind, one roll at a time. 🌿\n\nRelax Roller, $25 CAD. Calming lavender essential oil with argan and avocado oil.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Aromatherapy #Lavender #SelfCare #Unwind #HealEvolveThrive",
   "image": "https://export-download.canva.com/FeSYI/DAHa5BFeSYI/-1/0/0001-948529870700225043.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH4R7NKVBA%2F20261114%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20261114T043317Z&X-Amz-Expires=35364&X-Amz-Signature=716cf7f51a454c29d559b99ed5509ad480802a5b7a41dd8d3af6948a52194bd1&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Sat%2C%2014%20Nov%202026%2014%3A22%3A41%20GMT",
   "canvaDesign": "https://www.canva.com/d/oFn2jH15qrloEQ4",
-  "dueAt": "2026-11-15T16:00:00-05:00"
+  "dueAt": "2026-11-15T16:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6af85876e86a5789a6a8541e",
+      "dueAt": "2026-11-15T21:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-14T12:47:50.483Z"
 }
