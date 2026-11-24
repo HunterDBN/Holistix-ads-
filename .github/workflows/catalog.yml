@@ -23,7 +23,7 @@ jobs:
             const out = [];
             (async () => {
               for (let page = 1; page < 20; page++) {
-                const r = await fetch(`https://holistixhealth.ca/products.json?limit=250&page=${page}`, { headers: { "User-Agent": "Mozilla/5.0" } });
+                const r = await fetch(`https://holistixhealth.ca/products.json?limit=250&page=${page}&country=CA&currency=CAD`, { headers: { "User-Agent": "Mozilla/5.0", "Cookie": "localization=CA; cart_currency=CAD" } });
                 const { products } = await r.json();
                 if (!products.length) break;
                 for (const p of products) out.push({
