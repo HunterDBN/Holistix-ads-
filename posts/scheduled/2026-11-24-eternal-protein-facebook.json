@@ -1,7 +1,16 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Recover stronger. 💪\n\nEternal Protein blends whey with bovine collagen to support muscle recovery plus joint, tendon and skin health. Naturally flavoured and easy to digest. $74.99 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Protein #Collagen #Recovery #FitnessJourney #HealEvolveThrive",
   "image": "creatives/2026-11-24-eternal-protein.png",
   "canvaDesign": "https://www.canva.com/design/DAHbynWJHj8",
-  "dueAt": "2026-11-24T17:00:00-05:00"
+  "dueAt": "2026-11-24T17:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b04fc90c43c1f2f5c8175b4",
+      "dueAt": "2026-11-24T22:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:12.598Z"
 }

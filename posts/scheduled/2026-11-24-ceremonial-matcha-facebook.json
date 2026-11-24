@@ -1,7 +1,16 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Your calm morning ritual. 🍵☀️\n\nOrganic Ceremonial Matcha, shade-grown by small family farms near Uji in Kyoto. Fresh, rich and vibrant. Now $35 CAD (was $39).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Matcha #MorningRitual #GreenTea #Wellness #HealEvolveThrive",
   "image": "creatives/2026-11-24-ceremonial-matcha.png",
   "canvaDesign": "https://www.canva.com/design/DAHbyk-KG7Y",
-  "dueAt": "2026-11-24T09:00:00-05:00"
+  "dueAt": "2026-11-24T09:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b04fc8ec43c1f2f5c81746c",
+      "dueAt": "2026-11-24T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:11.033Z"
 }

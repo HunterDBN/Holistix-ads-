@@ -1,5 +1,5 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Reset your space. 🌿 Swipe for a calm-home ritual:\n\n1. Starter Smudge Kit: sage, palo santo, selenite & rose quartz, $26 CAD\n2. Rose Quartz Pyramid, $68 CAD\n3. Palo Santo, $4 CAD\n\nLight, breathe, begin again.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #Smudging #Crystals #PaloSanto #CalmHome #HealEvolveThrive",
   "images": [
     "creatives/2026-11-25-space-reset-carousel-1.png",
@@ -7,5 +7,14 @@
     "creatives/2026-11-25-space-reset-carousel-3.png"
   ],
   "canvaDesign": "https://www.canva.com/design/DAHbyn3CKv0",
-  "dueAt": "2026-11-25T20:00:00-05:00"
+  "dueAt": "2026-11-25T20:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b04fc94f0d7b1e0dea778fd",
+      "dueAt": "2026-11-26T01:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:16.421Z"
 }

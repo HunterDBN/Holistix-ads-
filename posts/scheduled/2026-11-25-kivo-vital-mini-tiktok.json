@@ -1,7 +1,16 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Red light, anywhere. 🔴\n\nThe Kivo Vital Mini is a compact red and near-infrared light panel you can take on the go, with a protective travel case included. Now $289.95 CAD (was $399).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #RedLightTherapy #WellnessTech #Kivo #SelfCare #HealEvolveThrive",
   "image": "creatives/2026-11-25-kivo-vital-mini.png",
   "canvaDesign": "https://www.canva.com/design/DAHbysN-jx4",
-  "dueAt": "2026-11-25T12:30:00-05:00"
+  "dueAt": "2026-11-25T12:30:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b04fc93c43c1f2f5c81769c",
+      "dueAt": "2026-11-25T17:30:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:15.204Z"
 }

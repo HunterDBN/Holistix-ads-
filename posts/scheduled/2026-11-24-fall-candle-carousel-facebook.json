@@ -7,5 +7,14 @@
     "creatives/2026-11-24-fall-candle-carousel-3.png"
   ],
   "canvaDesign": "https://www.canva.com/design/DAHbyhBzZj0",
-  "dueAt": "2026-11-24T12:30:00-05:00"
+  "dueAt": "2026-11-24T12:30:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b04fc919a4bd32ca3eaa419",
+      "dueAt": "2026-11-24T17:30:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:13.318Z"
 }

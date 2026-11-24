@@ -7,5 +7,14 @@
     "creatives/2026-11-25-skincare-routine-carousel-3.png"
   ],
   "canvaDesign": "https://www.canva.com/design/DAHbyqGbdzg",
-  "dueAt": "2026-11-25T09:00:00-05:00"
+  "dueAt": "2026-11-25T09:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b04fc936734c08a26a75188",
+      "dueAt": "2026-11-25T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:15.932Z"
 }

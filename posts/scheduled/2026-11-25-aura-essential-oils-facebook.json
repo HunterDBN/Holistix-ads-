@@ -1,7 +1,16 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Breathe in the good stuff. 🌿🍊\n\nAURA Essential Oils come in Peppermint, Lavender, Orange & Grapefruit, Eucalyptus and our Aura Signature blend. 1 oz bottles for diffusers, aromatherapy and more. From $37 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #EssentialOils #Aromatherapy #SelfCare #HealEvolveThrive",
   "image": "creatives/2026-11-25-aura-essential-oils.png",
   "canvaDesign": "https://www.canva.com/design/DAHa38hJuok",
-  "dueAt": "2026-11-25T17:00:00-05:00"
+  "dueAt": "2026-11-25T17:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b04fc919a4bd32ca3eaa457",
+      "dueAt": "2026-11-25T22:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:14.003Z"
 }
