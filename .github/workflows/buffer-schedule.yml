@@ -1,11 +1,15 @@
 name: Buffer - schedule posts
 
-# Sends every post in posts/queue/ to Buffer, then moves it to posts/scheduled/
-# so it is never sent twice. Runs when queue files land on main, or by hand.
+# Sends posts in posts/queue/ that are due within the next ~2 days to Buffer, then
+# moves each to posts/scheduled/ so it is never sent twice. Posts further out wait
+# in the queue (Buffer's free plan caps each channel at 10 scheduled posts) and are
+# picked up by the next run. Runs when queue files land on main, every 6 hours, or by hand.
 on:
   push:
     branches: [main]
     paths: ["posts/queue/**"]
+  schedule:
+    - cron: "17 */6 * * *"
   workflow_dispatch:
     inputs:
       dry_run:
@@ -28,6 +32,18 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
+      - name: Save remote images into creatives/
+        if: ${{ !inputs.dry_run }}
+        run: |
+          node scripts/buffer.mjs localize
+          git add -A creatives posts
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Save queued ad images into creatives/ [skip ci]"
+            git push
+          fi
+          echo "IMAGE_REF=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
       - name: Schedule queued posts
         run: node scripts/buffer.mjs schedule ${{ inputs.dry_run && '--dry-run' || '' }}
         env:

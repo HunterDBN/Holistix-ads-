@@ -2,7 +2,8 @@
 // Buffer API helper for Holistix ads. No dependencies (Node 20+).
 //
 //   node scripts/buffer.mjs channels             List organizations and connected channels
-//   node scripts/buffer.mjs schedule [--dry-run] Send every post in posts/queue/ to Buffer
+//   node scripts/buffer.mjs localize             Download remote images in posts/queue/ into creatives/
+//   node scripts/buffer.mjs schedule [--dry-run] Send queued posts due within WINDOW_HOURS to Buffer
 //
 // The API key is read from BUFFER_ACCESS_TOKEN (GitHub Actions secret, or a local
 // gitignored .env file). It is never printed.
@@ -14,6 +15,12 @@ import { fileURLToPath } from "node:url";
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const QUEUE_DIR = join(ROOT, "posts", "queue");
 const DONE_DIR = join(ROOT, "posts", "scheduled");
+const FAILED_DIR = join(ROOT, "posts", "failed");
+const CREATIVES_DIR = join(ROOT, "creatives");
+// Buffer's free plan allows 10 scheduled posts per channel. At 4 posts a day, only
+// send posts due within the next WINDOW_HOURS; the rest wait in posts/queue/ and
+// a later run (the workflow runs every few hours) sends them.
+const WINDOW_HOURS = Number(process.env.WINDOW_HOURS || 56);
 const API_URL = "https://api.buffer.com";
 
 loadDotEnv();
@@ -98,7 +105,7 @@ function toGraphQL(v) {
 function publicImageUrl(image) {
   if (/^https?:\/\//.test(image)) return image;
   const repo = process.env.GITHUB_REPOSITORY || "HunterDBN/Holistix-ads-";
-  const ref = process.env.GITHUB_SHA || "main";
+  const ref = process.env.IMAGE_REF || process.env.GITHUB_SHA || "main";
   const path = image.replace(/^\.?\//, "").split("/").map(encodeURIComponent).join("/");
   return `https://raw.githubusercontent.com/${repo}/${ref}/${path}`;
 }
@@ -113,10 +120,46 @@ function pickChannel(channels, wanted) {
   throw new Error(`"${wanted}" matches ${matches.length} channels; use the channel id instead.`);
 }
 
+
+// Canva export links expire after a few hours, so copy every remote image into
+// creatives/ and point the queue file at the committed copy.
+async function cmdLocalize() {
+  if (!existsSync(QUEUE_DIR)) return;
+  mkdirSync(CREATIVES_DIR, { recursive: true });
+  for (const file of readdirSync(QUEUE_DIR).filter((f) => f.endsWith(".json")).sort()) {
+    const path = join(QUEUE_DIR, file);
+    const post = JSON.parse(readFileSync(path, "utf8"));
+    const key = post.images ? "images" : "image";
+    const list = [].concat(post[key] ?? []);
+    if (!list.some((u) => /^https?:\/\//.test(u) && !u.includes("githubusercontent.com"))) continue;
+    const stem = file.replace(/\.json$/, "").replace(/-(facebook|tiktok|instagram|twitter)$/, "");
+    const out = [];
+    for (const [i, url] of list.entries()) {
+      if (!/^https?:\/\//.test(url) || url.includes("githubusercontent.com")) { out.push(url); continue; }
+      const rel = `creatives/${stem}${list.length > 1 ? `-${i + 1}` : ""}.png`;
+      if (!existsSync(join(ROOT, rel))) {
+        const res = await fetch(url);
+        if (!res.ok) { console.error(`✗ ${file}: could not download image ${i + 1} (HTTP ${res.status})`); out.push(url); continue; }
+        writeFileSync(join(ROOT, rel), Buffer.from(await res.arrayBuffer()));
+        console.log(`✓ saved ${rel}`);
+      }
+      out.push(rel);
+    }
+    post[key] = Array.isArray(post[key]) ? out : out[0];
+    writeFileSync(path, JSON.stringify(post, null, 2) + "\n");
+  }
+}
+
 async function cmdSchedule(dryRun) {
   if (!existsSync(QUEUE_DIR)) return console.log("No posts/queue folder; nothing to schedule.");
-  const files = readdirSync(QUEUE_DIR).filter((f) => f.endsWith(".json")).sort();
-  if (!files.length) return console.log("posts/queue is empty; nothing to schedule.");
+  const horizon = Date.now() + WINDOW_HOURS * 3600e3;
+  const all = readdirSync(QUEUE_DIR).filter((f) => f.endsWith(".json")).sort();
+  const files = all.filter((f) => {
+    const { dueAt } = JSON.parse(readFileSync(join(QUEUE_DIR, f), "utf8"));
+    return !dueAt || new Date(dueAt).getTime() <= horizon;
+  });
+  console.log(`${all.length} post(s) in the queue, ${files.length} due within ${WINDOW_HOURS}h.`);
+  if (!files.length) return;
 
   const channels = await getChannels(await resolveOrganization());
   mkdirSync(DONE_DIR, { recursive: true });
@@ -138,7 +181,8 @@ async function cmdSchedule(dryRun) {
           channelId: channel.id,
           schedulingType: enumValue("automatic"),
           mode: enumValue(post.dueAt ? "customScheduled" : "addToQueue"),
-          ...(post.dueAt && { dueAt: new Date(post.dueAt).toISOString() }),
+          // A time that has already passed (a late run) is moved to 10 minutes from now.
+          ...(post.dueAt && { dueAt: new Date(Math.max(new Date(post.dueAt).getTime(), Date.now() + 10 * 60e3)).toISOString() }),
           ...(images.length && { assets: images.map((img) => ({ image: { url: publicImageUrl(img) } })) }),
           // Facebook (and Instagram) need a post type: post, story or reel. Defaults to a feed post.
           ...(["facebook", "instagram"].includes(channel.service) && {
@@ -170,6 +214,14 @@ async function cmdSchedule(dryRun) {
     } catch (err) {
       failures++;
       console.error(`✗ ${file}: ${err.message}`);
+      // Park it in posts/failed/ so the next run does not retry (and double-post) it.
+      if (!dryRun && existsSync(path)) {
+        mkdirSync(FAILED_DIR, { recursive: true });
+        const post = JSON.parse(readFileSync(path, "utf8"));
+        post.error = err.message;
+        writeFileSync(path, JSON.stringify(post, null, 2) + "\n");
+        renameSync(path, join(FAILED_DIR, basename(file)));
+      }
     }
   }
   if (failures) process.exit(1);
@@ -177,8 +229,9 @@ async function cmdSchedule(dryRun) {
 
 const [cmd, ...args] = process.argv.slice(2);
 if (cmd === "channels") await cmdChannels();
+else if (cmd === "localize") await cmdLocalize();
 else if (cmd === "schedule") await cmdSchedule(args.includes("--dry-run"));
 else {
-  console.log("Usage: node scripts/buffer.mjs <channels|schedule> [--dry-run]");
+  console.log("Usage: node scripts/buffer.mjs <channels|localize|schedule> [--dry-run]");
   process.exit(cmd ? 1 : 0);
 }
