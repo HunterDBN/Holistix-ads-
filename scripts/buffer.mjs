@@ -4,6 +4,7 @@
 //   node scripts/buffer.mjs channels             List organizations and connected channels
 //   node scripts/buffer.mjs localize             Download remote images in posts/queue/ into creatives/
 //   node scripts/buffer.mjs schedule [--dry-run] Send queued posts due within WINDOW_HOURS to Buffer
+//   node scripts/buffer.mjs delete <postId...>   Delete scheduled Buffer posts (e.g. accidental duplicates)
 //
 // The API key is read from BUFFER_ACCESS_TOKEN (GitHub Actions secret, or a local
 // gitignored .env file). It is never printed.
@@ -233,9 +234,33 @@ async function cmdSchedule(dryRun) {
   if (failures) process.exit(1);
 }
 
+async function cmdDelete(ids) {
+  if (!ids.length) fail("Pass one or more Buffer post IDs.");
+  const schema = await gql(`query { __schema { mutationType { fields { name args { name type { kind name ofType { kind name } } } } } } }`);
+  const fields = schema.__schema.mutationType.fields;
+  console.log("Delete-like mutations:", JSON.stringify(fields.filter((f) => /delete|remove/i.test(f.name))));
+  const m = fields.find((f) => f.name === "deletePost");
+  if (!m) fail("This Buffer API has no deletePost mutation.");
+  const inputType = m.args[0]?.type.ofType?.name ?? m.args[0]?.type.name;
+  let inputFields = [];
+  if (inputType) {
+    const t = await gql(`query { __type(name: ${JSON.stringify(inputType)}) { inputFields { name } } }`);
+    inputFields = (t.__type?.inputFields ?? []).map((f) => f.name);
+  }
+  console.log(`deletePost(${m.args.map((a) => a.name).join(", ")}) input fields: ${inputFields.join(", ") || "-"}`);
+  for (const id of ids) {
+    const arg = m.args[0].name === "input" ? `input: { ${inputFields.includes("postId") ? "postId" : "id"}: ${JSON.stringify(id)} }` : `${m.args[0].name}: ${JSON.stringify(id)}`;
+    const data = await gql(`mutation { deletePost(${arg}) { __typename ... on MutationError { message } } }`);
+    const r = data.deletePost;
+    if (r?.message) console.error(`✗ ${id}: ${r.message}`);
+    else console.log(`✓ deleted ${id} (${r?.__typename})`);
+  }
+}
+
 const [cmd, ...args] = process.argv.slice(2);
 if (cmd === "channels") await cmdChannels();
 else if (cmd === "localize") await cmdLocalize();
+else if (cmd === "delete") await cmdDelete(args);
 else if (cmd === "schedule") await cmdSchedule(args.includes("--dry-run"));
 else {
   console.log("Usage: node scripts/buffer.mjs <channels|localize|schedule> [--dry-run]");

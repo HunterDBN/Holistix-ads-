@@ -1,0 +1,29 @@
+name: Buffer - delete posts
+
+# Deletes scheduled Buffer posts listed in posts/delete.txt (one Buffer post ID per
+# line, # comments allowed), or the IDs passed by hand. Used to remove accidental duplicates.
+on:
+  push:
+    branches: ["claude/**", main]
+    paths: ["posts/delete.txt"]
+  workflow_dispatch:
+    inputs:
+      ids:
+        description: "Space-separated Buffer post IDs"
+        type: string
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Delete posts
+        run: |
+          IDS="${{ inputs.ids }}"
+          if [ -z "$IDS" ]; then IDS=$(sed 's/#.*//' posts/delete.txt | xargs); fi
+          node scripts/buffer.mjs delete $IDS
+        env:
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
