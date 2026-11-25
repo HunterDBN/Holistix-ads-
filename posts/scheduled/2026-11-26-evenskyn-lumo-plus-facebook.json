@@ -10,6 +10,14 @@
       "channelId": "6af80f3862b70b94b0297432",
       "postId": "6b05e3d6d8711eba6d93a18c",
       "dueAt": "2026-11-26T14:00:00.000Z"
+    },
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b0670d8d8874a038cf4c0aa",
+      "dueAt": "2026-11-26T14:00:00.000Z",
+      "duplicate": true,
+      "note": "Sent again by the first scheduled run on main on 2026-11-25; delete this one in Buffer"
     }
   ],
   "scheduledAt": "2026-11-24T19:21:59.023Z"

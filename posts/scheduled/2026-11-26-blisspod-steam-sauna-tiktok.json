@@ -10,6 +10,14 @@
       "channelId": "6af80ed162b70b94b029717a",
       "postId": "6b05e3d66111797095d06973",
       "dueAt": "2026-11-26T22:00:00.000Z"
+    },
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b0670d740e1d58d12fe7b0d",
+      "dueAt": "2026-11-26T22:00:00.000Z",
+      "duplicate": true,
+      "note": "Sent again by the first scheduled run on main on 2026-11-25; delete this one in Buffer"
     }
   ],
   "scheduledAt": "2026-11-24T19:21:58.666Z"
