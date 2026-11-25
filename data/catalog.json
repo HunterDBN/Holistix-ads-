@@ -63181,7 +63181,7 @@
     "title": "Freyja: Honeycakes, apple & amber",
     "price": "8.00",
     "compareAt": null,
-    "available": true
+    "available": false
    },
    {
     "title": "Gaia: coffee, honey, tobacco",
@@ -67419,7 +67419,7 @@
     "title": "Vanilla / 4.4lbs (2Kg) | 56 servings",
     "price": "109.99",
     "compareAt": null,
-    "available": false
+    "available": true
    },
    {
     "title": "Chocolate / 2.2lbs (1Kg) | 28 servings",
@@ -67431,7 +67431,7 @@
     "title": "Chocolate / 4.4lbs (2Kg) | 56 servings",
     "price": "109.99",
     "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [

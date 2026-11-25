@@ -41,3 +41,8 @@ node scripts/buffer.mjs schedule --dry-run
 ```
 
 Requires Node 20 or newer; no packages to install.
+
+## Ad style and rotation
+
+- [`docs/style-guide/`](docs/style-guide/) holds Hunter's reference designs and the rules every ad follows (logo and holistixhealth.ca on every image, real product photos and prices, no template leftovers, no overlapping text).
+- `node scripts/rotation.mjs` lists the in-stock products and store categories that have gone longest without an ad, and the next layout styles to use. Add `"products"` (product handles), `"collection"` (for category ads) and `"style"` to each queue file so the rotation stays accurate.
