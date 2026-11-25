@@ -212,6 +212,12 @@ async function cmdSchedule(dryRun) {
         renameSync(path, join(DONE_DIR, basename(file)));
       }
     } catch (err) {
+      // Buffer's free plan caps scheduled posts per channel. Nothing was created,
+      // so leave the post queued; the 6-hourly run sends it once a slot frees up.
+      if (/scheduled posts limit reached/i.test(err.message)) {
+        console.log(`… ${file}: Buffer queue is full, keeping it queued for the next run`);
+        continue;
+      }
       failures++;
       console.error(`✗ ${file}: ${err.message}`);
       // Park it in posts/failed/ so the next run does not retry (and double-post) it.
