@@ -1,6 +1,0 @@
-# Duplicates of the Nov 26 Lumo+ and Blisspod posts, sent a second time on Nov 25.
-# The originals (6b05e3d6...) stay.
-6b0670d79cddd8483aaf939a
-6b0670d740e1d58d12fe7b0d
-6b0670d8d8874a038cf4c0aa
-6b0670d840e1d58d12fe7b48
