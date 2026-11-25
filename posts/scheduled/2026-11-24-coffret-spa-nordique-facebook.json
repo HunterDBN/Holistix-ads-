@@ -1,0 +1,16 @@
+{
+  "channel": "facebook",
+  "text": "A Nordic spa night at home. 🌲🛁\n\nThe Coffret Spa Nordique gift set brings a warm bath, a fir & spruce candle and rose & chamomile tea together in one box. A cozy gift for someone you love (or for you). $59.95 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #GiftIdeas #SpaNight #SelfCare #HolidayGifts #HealEvolveThrive",
+  "image": "creatives/2026-11-24-coffret-spa-nordique.png",
+  "canvaDesign": "https://www.canva.com/design/DAHbyuRdWOM",
+  "dueAt": "2026-11-24T20:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b04fc8fbc151fa8ad19b969",
+      "dueAt": "2026-11-25T01:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-24T02:55:11.868Z"
+}

@@ -1,0 +1,49 @@
+name: Store - snapshot catalog
+
+# Saves a trimmed copy of holistixhealth.ca/products.json to data/catalog.json
+# (titles, prices, images, short descriptions) so ads use current prices.
+on:
+  workflow_dispatch:
+  push:
+    branches: ["claude/**"]
+    paths: [".github/workflows/catalog.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download catalog
+        run: |
+          mkdir -p data
+          node -e '
+            const out = [];
+            (async () => {
+              for (let page = 1; page < 20; page++) {
+                const r = await fetch(`https://holistixhealth.ca/products.json?limit=250&page=${page}&country=CA&currency=CAD`, { headers: { "User-Agent": "Mozilla/5.0", "Cookie": "localization=CA; cart_currency=CAD" } });
+                const { products } = await r.json();
+                if (!products.length) break;
+                for (const p of products) out.push({
+                  handle: p.handle, title: p.title, type: p.product_type, tags: p.tags,
+                  price: p.variants[0].price, compareAt: p.variants[0].compare_at_price,
+                  available: p.variants.some(v => v.available),
+                  variants: p.variants.map(v => ({ title: v.title, price: v.price, compareAt: v.compare_at_price, available: v.available })),
+                  images: p.images.map(i => i.src),
+                  description: (p.body_html || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 600),
+                });
+              }
+              require("fs").writeFileSync("data/catalog.json", JSON.stringify(out, null, 1));
+              console.log(out.length + " products");
+            })();
+          '
+      - name: Commit snapshot
+        run: |
+          git add data
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Snapshot store catalog [skip ci]"
+          git push
