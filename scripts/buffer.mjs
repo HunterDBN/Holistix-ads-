@@ -214,6 +214,9 @@ async function cmdSchedule(dryRun) {
     } catch (err) {
       failures++;
       console.error(`✗ ${file}: ${err.message}`);
+      // Buffer refused it for the free-plan cap: nothing was created, so leave it in the
+      // queue and let a later run (after earlier posts have published) send it.
+      if (/limit reached/i.test(err.message)) { console.error(`  (left in the queue to retry later)`); continue; }
       // Park it in posts/failed/ so the next run does not retry (and double-post) it.
       if (!dryRun && existsSync(path)) {
         mkdirSync(FAILED_DIR, { recursive: true });
@@ -227,11 +230,28 @@ async function cmdSchedule(dryRun) {
   if (failures) process.exit(1);
 }
 
+// Delete Buffer posts by id (for example a duplicate). Usage: delete <postId> [<postId> ...]
+async function cmdDelete(ids) {
+  if (!ids.length) fail("Usage: node scripts/buffer.mjs delete <postId> [<postId> ...]");
+  for (const id of ids) {
+    const data = await gql(
+      `mutation { deletePost(input: { id: ${JSON.stringify(id)} }) {
+           __typename
+           ... on MutationError { message }
+         } }`,
+    );
+    const result = data.deletePost;
+    if (result?.message) fail(`Buffer refused to delete ${id}: ${result.message}`);
+    console.log(`✓ deleted Buffer post ${id} (${result?.__typename ?? "ok"})`);
+  }
+}
+
 const [cmd, ...args] = process.argv.slice(2);
 if (cmd === "channels") await cmdChannels();
 else if (cmd === "localize") await cmdLocalize();
+else if (cmd === "delete") await cmdDelete(args);
 else if (cmd === "schedule") await cmdSchedule(args.includes("--dry-run"));
 else {
-  console.log("Usage: node scripts/buffer.mjs <channels|localize|schedule> [--dry-run]");
+  console.log("Usage: node scripts/buffer.mjs <channels|localize|schedule|delete> [--dry-run]");
   process.exit(cmd ? 1 : 0);
 }

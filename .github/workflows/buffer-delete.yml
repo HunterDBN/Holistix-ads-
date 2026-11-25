@@ -1,0 +1,24 @@
+name: Buffer - delete posts
+
+# Deletes scheduled Buffer posts by id (for example duplicates). Run by hand only.
+on:
+  workflow_dispatch:
+    inputs:
+      post_ids:
+        description: "Buffer post ids, separated by spaces"
+        required: true
+        type: string
+
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Delete posts
+        run: node scripts/buffer.mjs delete $POST_IDS
+        env:
+          POST_IDS: ${{ inputs.post_ids }}
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}

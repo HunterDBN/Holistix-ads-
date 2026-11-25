@@ -40733,13 +40733,13 @@
   ],
   "price": "69.99",
   "compareAt": "69.99",
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Black",
     "price": "69.99",
     "compareAt": "69.99",
-    "available": true
+    "available": false
    },
    {
     "title": "Grey",
