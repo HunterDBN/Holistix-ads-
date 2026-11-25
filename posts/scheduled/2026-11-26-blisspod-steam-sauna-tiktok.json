@@ -1,7 +1,16 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Your personal spa, at home. 🌿\n\nThe Blisspod Portable Steam Sauna gives you full-body steam in minutes, then folds away when you're done. Now $249 CAD (was $329).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #SteamSauna #SelfCare #WellnessAtHome #HealEvolveThrive",
   "image": "creatives/2026-11-26-blisspod-steam-sauna.png",
   "canvaDesign": "https://www.canva.com/design/DAHa3yiTUxI",
-  "dueAt": "2026-11-26T17:00:00-05:00"
+  "dueAt": "2026-11-26T17:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b0670d740e1d58d12fe7b0d",
+      "dueAt": "2026-11-26T22:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-25T05:23:35.911Z"
 }
