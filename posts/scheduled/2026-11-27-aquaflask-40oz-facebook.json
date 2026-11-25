@@ -1,7 +1,16 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Sip, move, repeat. 💧\n\nThe AquaFlask 40oz with sports lid keeps drinks hot for up to 12 hours and cold for up to 24, with a leakproof lid for the gym, the trail or your desk. $39.99 CAD (was $54.99).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #AquaFlask #StayHydrated #WellnessRoutine #ActiveLifestyle #HealEvolveThrive",
   "image": "creatives/2026-11-27-aquaflask-40oz.png",
   "canvaDesign": "https://www.canva.com/design/DAHb23rynRA",
-  "dueAt": "2026-11-27T12:30:00-05:00"
+  "dueAt": "2026-11-27T12:30:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b06ff2efe6e607e49d437c0",
+      "dueAt": "2026-11-27T17:30:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-25T15:30:55.008Z"
 }

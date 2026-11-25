@@ -12,5 +12,14 @@
     "https://www.canva.com/design/DAHb21JZymE",
     "https://www.canva.com/design/DAHb2yFE0Rs",
     "https://www.canva.com/design/DAHb28qPjH0"
-  ]
+  ],
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b06ff308b7db026c8b50d09",
+      "dueAt": "2026-11-27T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-25T15:30:56.913Z"
 }

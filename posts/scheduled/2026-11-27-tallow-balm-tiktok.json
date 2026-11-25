@@ -1,7 +1,16 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Soft skin, all winter. 🌲🕯️\n\nPure Grass-Fed Canadian Tallow Balm is a traditional moisturizer rich in vitamins A, D, E & K for deep, comforting hydration on dry winter skin. $14 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #TallowBalm #WinterSkincare #CanadianMade #NaturalSkincare #HealEvolveThrive",
   "image": "creatives/2026-11-27-tallow-balm.png",
   "canvaDesign": "https://www.canva.com/design/DAHb24ld7i8",
-  "dueAt": "2026-11-27T17:00:00-05:00"
+  "dueAt": "2026-11-27T17:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b06ff302e4c3fe8326b4738",
+      "dueAt": "2026-11-27T22:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-25T15:30:56.433Z"
 }

@@ -12,5 +12,14 @@
     "https://www.canva.com/design/DAHb21JZymE",
     "https://www.canva.com/design/DAHb2yFE0Rs",
     "https://www.canva.com/design/DAHb28qPjH0"
-  ]
+  ],
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b06ff313b698826fdce8769",
+      "dueAt": "2026-11-27T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-25T15:30:57.517Z"
 }
