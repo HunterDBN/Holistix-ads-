@@ -3910,13 +3910,13 @@
   ],
   "price": "32.99",
   "compareAt": null,
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Default Title",
     "price": "32.99",
     "compareAt": null,
-    "available": true
+    "available": false
    }
   ],
   "images": [
@@ -11409,13 +11409,13 @@
   ],
   "price": "32.00",
   "compareAt": null,
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Default Title",
     "price": "32.00",
     "compareAt": null,
-    "available": true
+    "available": false
    }
   ],
   "images": [
@@ -40733,13 +40733,13 @@
   ],
   "price": "69.99",
   "compareAt": "69.99",
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Black",
     "price": "69.99",
     "compareAt": "69.99",
-    "available": false
+    "available": true
    },
    {
     "title": "Grey",
@@ -40866,31 +40866,31 @@
   ],
   "price": "11.99",
   "compareAt": "11.99",
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Buy 1",
     "price": "11.99",
     "compareAt": "11.99",
-    "available": false
+    "available": true
    },
    {
     "title": "Buy 2",
     "price": "21.59",
     "compareAt": "23.99",
-    "available": false
+    "available": true
    },
    {
     "title": "Buy 4",
     "price": "40.79",
     "compareAt": "47.99",
-    "available": false
+    "available": true
    },
    {
     "title": "Buy 8",
     "price": "76.79",
     "compareAt": "95.99",
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -55865,7 +55865,7 @@
     "title": "Grey / 6",
     "price": "118.00",
     "compareAt": "0.00",
-    "available": true
+    "available": false
    },
    {
     "title": "Grey / 8",
@@ -59720,7 +59720,7 @@
     "title": "Light Baby Blue / 6",
     "price": "60.00",
     "compareAt": "0.00",
-    "available": true
+    "available": false
    },
    {
     "title": "Light Baby Blue / 8",
@@ -60743,13 +60743,13 @@
   ],
   "price": "22.00",
   "compareAt": null,
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "25h / 4oz",
     "price": "22.00",
     "compareAt": null,
-    "available": true
+    "available": false
    }
   ],
   "images": [
@@ -63960,13 +63960,13 @@
   ],
   "price": "14.99",
   "compareAt": null,
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Default Title",
     "price": "14.99",
     "compareAt": null,
-    "available": true
+    "available": false
    }
   ],
   "images": [
@@ -67416,7 +67416,7 @@
     "available": true
    },
    {
-    "title": "Vanilla / 4.4lbs (2Kg) | 56 servings",
+    "title": "Vanilla / 2 Kg (4.4 lbs) / 2x 1 Kg",
     "price": "109.99",
     "compareAt": null,
     "available": true
@@ -68086,13 +68086,13 @@
    "Shopify Collective"
   ],
   "price": "29.99",
-  "compareAt": null,
+  "compareAt": "29.99",
   "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "29.99",
-    "compareAt": null,
+    "compareAt": "29.99",
     "available": true
    }
   ],
