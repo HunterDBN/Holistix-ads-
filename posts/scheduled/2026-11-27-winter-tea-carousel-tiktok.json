@@ -1,5 +1,5 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Three cozy cups for cold mornings. ☕❄️ Swipe through:\n\n1. Warm Earth Chaga Turmeric Tea: wild-harvested chaga & turmeric, caffeine free, $23 CAD\n2. Elderberry Rosehip Tea: tart & fruity with wild elderberries, $12 CAD\n3. Golden Hour Tea: elderberries, rhodiola & organic roses, $17 CAD\n\nWhich one is your winter mug?\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #HerbalTea #WinterRitual #WildHarvested #CozySeason #HealEvolveThrive",
   "images": [
     "creatives/2026-11-27-winter-tea-carousel-1.png",
@@ -12,5 +12,14 @@
     "https://www.canva.com/design/DAHb21JZymE",
     "https://www.canva.com/design/DAHb2yFE0Rs",
     "https://www.canva.com/design/DAHb28qPjH0"
-  ]
+  ],
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b0862ff0f76477d8d07cd0d",
+      "dueAt": "2026-11-27T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-26T16:49:03.818Z"
 }
