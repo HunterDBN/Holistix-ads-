@@ -1,5 +1,5 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Glowing skin starts with how you treat yourself. ✨\n\nKama Ayurveda Kumkumadi Youth Revitalizing Soft Cream is a nourishing Ayurvedic day moisturiser with Kumkumadi oil, licorice and plant-based hyaluronic acid for brighter, smoother-looking skin. Now $100.25 CAD (was $145.46).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #KamaAyurveda #Kumkumadi #AyurvedicSkincare #GlowingSkin #HealEvolveThrive",
   "image": "creatives/2026-11-27-kama-kumkumadi-day-cream.png",
   "canvaDesign": "https://www.canva.com/design/DAHb8y2z6T4",
@@ -7,5 +7,14 @@
     "kama-ayurveda-kumkumadi-youth-revitalizing-soft-cream-brightening-day-cream"
   ],
   "style": "quote-over-product",
-  "dueAt": "2026-11-27T20:00:00-05:00"
+  "dueAt": "2026-11-27T20:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b078f4db8e2338b857dec3a",
+      "dueAt": "2026-11-28T01:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-26T01:45:50.141Z"
 }
