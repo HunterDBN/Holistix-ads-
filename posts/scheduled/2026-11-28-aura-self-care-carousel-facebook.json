@@ -18,5 +18,14 @@
     "aura-signature-body-lotion"
   ],
   "style": "framed-arch",
-  "dueAt": "2026-11-28T17:00:00-05:00"
+  "dueAt": "2026-11-28T17:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b0887441fa40915829021dd",
+      "dueAt": "2026-11-28T22:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-26T19:23:48.633Z"
 }
