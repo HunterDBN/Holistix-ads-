@@ -16525,13 +16525,13 @@
   ],
   "price": "54.00",
   "compareAt": null,
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "54.00",
     "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -23284,13 +23284,13 @@
   ],
   "price": "79.99",
   "compareAt": "179.99",
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "79.99",
     "compareAt": "179.99",
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -23314,13 +23314,13 @@
   ],
   "price": "399.99",
   "compareAt": "799.99",
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "399.99",
     "compareAt": "799.99",
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -27024,37 +27024,37 @@
    "Shopify Collective"
   ],
   "price": "90.00",
-  "compareAt": "119.99",
+  "compareAt": "109.00",
   "available": true,
   "variants": [
    {
     "title": "XS",
     "price": "90.00",
-    "compareAt": "119.99",
+    "compareAt": "109.00",
     "available": false
    },
    {
     "title": "S",
     "price": "90.00",
-    "compareAt": "119.99",
+    "compareAt": "109.00",
     "available": true
    },
    {
     "title": "M",
     "price": "90.00",
-    "compareAt": "119.99",
+    "compareAt": "109.00",
     "available": true
    },
    {
     "title": "L",
     "price": "90.00",
-    "compareAt": "119.99",
+    "compareAt": "109.00",
     "available": true
    },
    {
     "title": "XL",
     "price": "90.00",
-    "compareAt": "119.99",
+    "compareAt": "109.00",
     "available": false
    }
   ],
@@ -37188,19 +37188,19 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37221,25 +37221,25 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "cotton wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37259,43 +37259,43 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": "0.00",
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": false
    },
    {
     "title": "wood wick / jumbo",
     "price": "64.00",
-    "compareAt": null,
+    "compareAt": "64.00",
     "available": false
    },
    {
     "title": "cotton wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": true
    },
    {
     "title": "cotton wick / jumbo",
     "price": "64.00",
-    "compareAt": null,
+    "compareAt": "64.00",
     "available": true
    }
   ],
@@ -37318,43 +37318,43 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    },
    {
     "title": "wood wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": false
    },
    {
     "title": "wood wick / jumbo",
     "price": "64.00",
-    "compareAt": null,
+    "compareAt": "64.00",
     "available": false
    },
    {
     "title": "cotton wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": true
    },
    {
     "title": "cotton wick / jumbo",
     "price": "64.00",
-    "compareAt": null,
+    "compareAt": "64.00",
     "available": true
    }
   ],
@@ -37377,19 +37377,19 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37412,25 +37412,25 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "cotton wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37450,19 +37450,19 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37484,19 +37484,19 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37518,25 +37518,25 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    },
    {
     "title": "cotton wick / mini",
     "price": "26.00",
-    "compareAt": null,
+    "compareAt": "26.00",
     "available": true
    },
    {
     "title": "wood wick / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": false
    }
   ],
@@ -37558,13 +37558,13 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    }
   ],
@@ -37638,13 +37638,13 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    }
   ],
@@ -37663,13 +37663,13 @@
    "Shopify Collective"
   ],
   "price": "42.00",
-  "compareAt": null,
+  "compareAt": "42.00",
   "available": true,
   "variants": [
    {
     "title": "cotton / classic",
     "price": "42.00",
-    "compareAt": null,
+    "compareAt": "42.00",
     "available": true
    }
   ],
@@ -37690,13 +37690,13 @@
   ],
   "price": "29.99",
   "compareAt": null,
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Default Title",
     "price": "29.99",
     "compareAt": null,
-    "available": true
+    "available": false
    }
   ],
   "images": [
@@ -37839,7 +37839,7 @@
     "title": "Brown",
     "price": "25.00",
     "compareAt": null,
-    "available": true
+    "available": false
    },
    {
     "title": "Black",
@@ -53486,79 +53486,79 @@
    "Shopify Collective"
   ],
   "price": "96.00",
-  "compareAt": "0.00",
+  "compareAt": "96.00",
   "available": true,
   "variants": [
    {
     "title": "Midnight Blue / 4",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    },
    {
     "title": "Midnight Blue / 6",
     "price": "96.00",
-    "compareAt": "0.00",
-    "available": true
+    "compareAt": "96.00",
+    "available": false
    },
    {
     "title": "Midnight Blue / 8",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    },
    {
     "title": "Midnight Blue / 10",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    },
    {
     "title": "Black / 4",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": false
    },
    {
     "title": "Black / 6",
     "price": "96.00",
-    "compareAt": "0.00",
-    "available": true
+    "compareAt": "96.00",
+    "available": false
    },
    {
     "title": "Black / 8",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    },
    {
     "title": "Black / 10",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    },
    {
     "title": "Midnight Blue / 12",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": false
    },
    {
     "title": "Midnight Blue / 14",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": false
    },
    {
     "title": "Black / 12",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    },
    {
     "title": "Black / 14",
     "price": "96.00",
-    "compareAt": "0.00",
+    "compareAt": "96.00",
     "available": true
    }
   ],
@@ -53766,187 +53766,187 @@
    "Shopify Collective"
   ],
   "price": "56.00",
-  "compareAt": "0.00",
+  "compareAt": "56.00",
   "available": true,
   "variants": [
    {
     "title": "Ivory / 4",
     "price": "56.00",
-    "compareAt": "0.00",
-    "available": true
+    "compareAt": "56.00",
+    "available": false
    },
    {
     "title": "Ivory / 6",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Ivory / 8",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Ivory / 10",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Light Blue Grey / 4",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Light Blue Grey / 6",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Light Blue Grey / 8",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Light Blue Grey / 10",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Cherry Red / 4",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Cherry Red / 6",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Cherry Red / 8",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Cherry Red / 10",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Espresso / 4",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Espresso / 6",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Espresso / 8",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Espresso / 10",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Dusk / 4",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Dusk / 6",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Dusk / 8",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Dusk / 10",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Black / 4",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Black / 6",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Black / 8",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Black / 10",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": true
    },
    {
     "title": "Ivory / 12",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Light Blue Grey / 12",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Cherry Red / 12",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Espresso / 12",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Dusk / 12",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    },
    {
     "title": "Black / 12",
     "price": "56.00",
-    "compareAt": "0.00",
+    "compareAt": "56.00",
     "available": false
    }
   ],
@@ -54629,151 +54629,151 @@
    "Shopify Collective"
   ],
   "price": "88.00",
-  "compareAt": "0.00",
+  "compareAt": "88.00",
   "available": true,
   "variants": [
    {
     "title": "Iron Ore / 2",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Iron Ore / 4",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Iron Ore / 6",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Iron Ore / 8",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Iron Ore / 10",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Iron Ore / 12",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Black / 2",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Black / 4",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Black / 6",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Black / 8",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Black / 10",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": false
    },
    {
     "title": "Black / 12",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Coffee / 2",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Coffee / 4",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Coffee / 6",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Coffee / 8",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Coffee / 10",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Coffee / 12",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Smokey Grey / 2",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Smokey Grey / 4",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Smokey Grey / 6",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Smokey Grey / 8",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Smokey Grey / 10",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    },
    {
     "title": "Smokey Grey / 12",
     "price": "88.00",
-    "compareAt": "0.00",
+    "compareAt": "88.00",
     "available": true
    }
   ],
@@ -54932,7 +54932,7 @@
     "title": "Pebble Grey / 10",
     "price": "88.00",
     "compareAt": "0.00",
-    "available": true
+    "available": false
    },
    {
     "title": "Pebble Grey / 12",
@@ -55016,7 +55016,7 @@
     "title": "Black / 4",
     "price": "80.00",
     "compareAt": "0.00",
-    "available": true
+    "available": false
    },
    {
     "title": "Black / 6",
@@ -55859,7 +55859,7 @@
     "title": "Grey / 4",
     "price": "118.00",
     "compareAt": "0.00",
-    "available": true
+    "available": false
    },
    {
     "title": "Grey / 6",
@@ -56537,37 +56537,37 @@
    "Shopify Collective"
   ],
   "price": "90.00",
-  "compareAt": "0.00",
+  "compareAt": "90.00",
   "available": true,
   "variants": [
    {
     "title": "Black / 4",
     "price": "90.00",
-    "compareAt": "0.00",
+    "compareAt": "90.00",
     "available": true
    },
    {
     "title": "Black / 6",
     "price": "90.00",
-    "compareAt": "0.00",
+    "compareAt": "90.00",
     "available": true
    },
    {
     "title": "Black / 8",
     "price": "90.00",
-    "compareAt": "0.00",
+    "compareAt": "90.00",
     "available": false
    },
    {
     "title": "Black / 10",
     "price": "90.00",
-    "compareAt": "0.00",
+    "compareAt": "90.00",
     "available": false
    },
    {
     "title": "Black / 12",
     "price": "90.00",
-    "compareAt": "0.00",
+    "compareAt": "90.00",
     "available": true
    }
   ],
@@ -56773,43 +56773,43 @@
    "Shopify Collective"
   ],
   "price": "68.00",
-  "compareAt": "0.00",
+  "compareAt": "68.00",
   "available": true,
   "variants": [
    {
     "title": "White / S",
     "price": "68.00",
-    "compareAt": "0.00",
+    "compareAt": "68.00",
     "available": true
    },
    {
     "title": "White / M",
     "price": "68.00",
-    "compareAt": "0.00",
+    "compareAt": "68.00",
     "available": true
    },
    {
     "title": "White / L",
     "price": "68.00",
-    "compareAt": "0.00",
+    "compareAt": "68.00",
     "available": true
    },
    {
     "title": "Black / S",
     "price": "68.00",
-    "compareAt": "0.00",
+    "compareAt": "68.00",
     "available": true
    },
    {
     "title": "Black / M",
     "price": "68.00",
-    "compareAt": "0.00",
+    "compareAt": "68.00",
     "available": true
    },
    {
     "title": "Black / L",
     "price": "68.00",
-    "compareAt": "0.00",
+    "compareAt": "68.00",
     "available": true
    }
   ],
@@ -59022,187 +59022,187 @@
    "Shopify Collective"
   ],
   "price": "52.00",
-  "compareAt": "0.00",
+  "compareAt": "52.00",
   "available": true,
   "variants": [
    {
     "title": "Dusk / 4",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Dusk / 6",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Dusk / 8",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Dusk / 10",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Cherry Red / 4",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Cherry Red / 6",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Cherry Red / 8",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Cherry Red / 10",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Ivory / 4",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Ivory / 6",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Ivory / 8",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Ivory / 10",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Light Blue Grey / 4",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Light Blue Grey / 6",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Light Blue Grey / 8",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Light Blue Grey / 10",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Black / 4",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Black / 6",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Black / 8",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Black / 10",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Espresso / 4",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Espresso / 6",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Espresso / 8",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Espresso / 10",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Dusk / 12",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Cherry Red / 12",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Ivory / 12",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Light Blue Grey / 12",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Black / 12",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Espresso / 12",
     "price": "52.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    }
   ],
@@ -59247,151 +59247,151 @@
    "Shopify Collective"
   ],
   "price": "26.00",
-  "compareAt": "0.00",
+  "compareAt": "52.00",
   "available": true,
   "variants": [
    {
     "title": "Black / 4",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Black / 6",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Black / 8",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Black / 10",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Frosted Grape / 4",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Frosted Grape / 6",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Frosted Grape / 8",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Frosted Grape / 10",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Bronzed Green / 4",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Bronzed Green / 6",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Bronzed Green / 8",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Bronzed Green / 10",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Cowboy Blue / 4",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Cowboy Blue / 6",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Cowboy Blue / 8",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Cowboy Blue / 10",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    },
    {
     "title": "Burnt Orange / 4",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Burnt Orange / 6",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Burnt Orange / 8",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Burnt Orange / 10",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Deep Chestnut / 4",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Deep Chestnut / 6",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Deep Chestnut / 8",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": false
    },
    {
     "title": "Deep Chestnut / 10",
     "price": "26.00",
-    "compareAt": "0.00",
+    "compareAt": "52.00",
     "available": true
    }
   ],
@@ -59428,80 +59428,80 @@
    "Shopify Collective"
   ],
   "price": "78.00",
-  "compareAt": "0.00",
-  "available": false,
+  "compareAt": "78.00",
+  "available": true,
   "variants": [
    {
     "title": "Vibrant Sky Blue / M",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Vibrant Sky Blue / L",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Vibrant Sky Blue / XL",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Black / M",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Black / L",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Black / XL",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "White / M",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "White / L",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "White / XL",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Dark Grey / M",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Dark Grey / L",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    },
    {
     "title": "Dark Grey / XL",
     "price": "78.00",
-    "compareAt": "0.00",
-    "available": false
+    "compareAt": "78.00",
+    "available": true
    }
   ],
   "images": [
@@ -60021,79 +60021,79 @@
    "Shopify Collective"
   ],
   "price": "64.00",
-  "compareAt": "0.00",
+  "compareAt": "64.00",
   "available": true,
   "variants": [
    {
     "title": "Midnight Blue / 4",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Midnight Blue / 6",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Midnight Blue / 8",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Midnight Blue / 10",
     "price": "64.00",
-    "compareAt": "0.00",
-    "available": true
+    "compareAt": "64.00",
+    "available": false
    },
    {
     "title": "Midnight Blue / 12",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": false
    },
    {
     "title": "Midnight Blue / 14",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": false
    },
    {
     "title": "Black / 4",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Black / 6",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Black / 8",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Black / 10",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Black / 12",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    },
    {
     "title": "Black / 14",
     "price": "64.00",
-    "compareAt": "0.00",
+    "compareAt": "64.00",
     "available": true
    }
   ],
@@ -63934,13 +63934,13 @@
   ],
   "price": "19.99",
   "compareAt": null,
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "19.99",
     "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -63987,13 +63987,13 @@
   ],
   "price": "19.99",
   "compareAt": null,
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "19.99",
     "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -64093,13 +64093,13 @@
   ],
   "price": "19.99",
   "compareAt": null,
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "19.99",
     "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -64118,13 +64118,13 @@
   ],
   "price": "19.99",
   "compareAt": null,
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "Default Title",
     "price": "19.99",
     "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -64326,19 +64326,13 @@
   ],
   "price": "19.99",
   "compareAt": null,
-  "available": false,
+  "available": true,
   "variants": [
    {
     "title": "10ml Rollerball",
     "price": "19.99",
     "compareAt": null,
-    "available": false
-   },
-   {
-    "title": "30ml Glass Bottle",
-    "price": "27.99",
-    "compareAt": null,
-    "available": false
+    "available": true
    }
   ],
   "images": [
@@ -65234,13 +65228,13 @@
   ],
   "price": "18.00",
   "compareAt": "22.00",
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Default Title",
     "price": "18.00",
     "compareAt": "22.00",
-    "available": true
+    "available": false
    }
   ],
   "images": [
@@ -67726,13 +67720,13 @@
   ],
   "price": "49.99",
   "compareAt": null,
-  "available": true,
+  "available": false,
   "variants": [
    {
     "title": "Default Title",
     "price": "49.99",
     "compareAt": null,
-    "available": true
+    "available": false
    }
   ],
   "images": [
