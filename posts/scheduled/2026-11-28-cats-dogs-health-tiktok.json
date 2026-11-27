@@ -9,5 +9,14 @@
   ],
   "collection": "cats-dogs-health",
   "style": "split-panel",
-  "dueAt": "2026-11-28T09:00:00-05:00"
+  "dueAt": "2026-11-28T09:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b08dff58899c4e779084c63",
+      "dueAt": "2026-11-28T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T01:42:14.089Z"
 }

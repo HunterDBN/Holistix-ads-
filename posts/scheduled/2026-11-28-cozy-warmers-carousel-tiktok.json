@@ -18,5 +18,14 @@
     "sundays-lavender-apricot-sandalwood"
   ],
   "style": "flatlay-quote",
-  "dueAt": "2026-11-28T20:00:00-05:00"
+  "dueAt": "2026-11-28T20:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b08dff7548b6e180d4eca5f",
+      "dueAt": "2026-11-29T01:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T01:42:15.129Z"
 }

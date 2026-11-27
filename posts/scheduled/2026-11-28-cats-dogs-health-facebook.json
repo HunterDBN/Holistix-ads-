@@ -9,5 +9,14 @@
   ],
   "collection": "cats-dogs-health",
   "style": "split-panel",
-  "dueAt": "2026-11-28T09:00:00-05:00"
+  "dueAt": "2026-11-28T09:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b08dff57c3f43554e4a3b0a",
+      "dueAt": "2026-11-28T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T01:42:13.289Z"
 }
