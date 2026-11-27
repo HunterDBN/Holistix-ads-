@@ -10,5 +10,14 @@
   ],
   "collection": "candles",
   "style": "photo-band",
-  "dueAt": "2026-11-29T20:00:00-05:00"
+  "dueAt": "2026-11-29T20:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b09d8632ea34800c28a2312",
+      "dueAt": "2026-11-30T01:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T19:22:11.283Z"
 }

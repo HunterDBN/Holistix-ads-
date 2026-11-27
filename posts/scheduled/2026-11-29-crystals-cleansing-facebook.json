@@ -1,5 +1,5 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Cleanse. Ground. Glow. ✨🌿\n\nOur Crystals & Cleansing collection has everything for a calm reset at home: labradorite spheres, amazonite generators, selenite, white sage bundles, smudge kits, palo santo and more.\n\nFast shipping + 30-day money-back guarantee.\nShop the collection 👉 holistixhealth.ca/collections/crystals-cleansing\n\n#HolistixHealth #Crystals #CrystalCollection #WhiteSage #EnergyCleanse #HealEvolveThrive",
   "image": "creatives/2026-11-29-crystals-cleansing.png",
   "canvaDesign": "https://www.canva.com/design/DAHcCxXRiU8",
@@ -10,5 +10,14 @@
   ],
   "collection": "crystals-cleansing",
   "style": "hero-collage",
-  "dueAt": "2026-11-29T09:00:00-05:00"
+  "dueAt": "2026-11-29T09:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b09d864277f27038a30bce8",
+      "dueAt": "2026-11-29T14:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T19:22:12.108Z"
 }

@@ -10,5 +10,14 @@
   ],
   "collection": "candles",
   "style": "photo-band",
-  "dueAt": "2026-11-29T20:00:00-05:00"
+  "dueAt": "2026-11-29T20:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b09d86371e8cc12a6c378f9",
+      "dueAt": "2026-11-30T01:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T19:22:11.725Z"
 }
