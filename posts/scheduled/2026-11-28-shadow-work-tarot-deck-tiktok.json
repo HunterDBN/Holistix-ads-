@@ -1,5 +1,5 @@
 {
-  "channel": "facebook",
+  "channel": "tiktok",
   "text": "Explore your shadows. Find your light. 🌙\n\nThe Shadow Work Tarot Card Deck: 78 Victorian-inspired illustrated cards with gold foil edges, made for introspection and personal growth. Great for beginners and seasoned readers. On sale for $47.90 CAD (was $79.00).\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #ShadowWork #Tarot #TarotDeck #SpiritualGrowth #HealEvolveThrive",
   "image": "creatives/2026-11-28-shadow-work-tarot-deck.png",
   "canvaDesign": "https://www.canva.com/design/DAHb8yesuPk",
@@ -7,5 +7,14 @@
     "shadow-work-tarot-card-deck"
   ],
   "style": "sale-icons",
-  "dueAt": "2026-11-28T12:30:00-05:00"
+  "dueAt": "2026-11-28T12:30:00-05:00",
+  "buffer": [
+    {
+      "channel": "tiktok",
+      "channelId": "6af80ed162b70b94b029717a",
+      "postId": "6b09b1062137ad18e1db7c79",
+      "dueAt": "2026-11-28T17:30:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-27T16:34:14.582Z"
 }
