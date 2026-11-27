@@ -37,15 +37,6 @@ jobs:
               }
               require("fs").writeFileSync("data/catalog.json", JSON.stringify(out, null, 1));
               console.log(out.length + " products");
-              const cols = [];
-              for (let page = 1; page < 10; page++) {
-                const r = await fetch(`https://holistixhealth.ca/collections.json?limit=250&page=${page}`, { headers: { "User-Agent": "Mozilla/5.0", "Cookie": "localization=CA; cart_currency=CAD" } });
-                const { collections } = await r.json();
-                if (!collections || !collections.length) break;
-                for (const c of collections) cols.push({ handle: c.handle, title: c.title, products_count: c.products_count, image: c.image ? c.image.src : null });
-              }
-              require("fs").writeFileSync("data/collections.json", JSON.stringify(cols, null, 1));
-              console.log(cols.length + " collections");
             })();
           '
       - name: Commit snapshot
