@@ -1,5 +1,5 @@
 {
-  "channel": "tiktok",
+  "channel": "facebook",
   "text": "Body care that feels like a ritual. 🌿\n\nElèva Firming Cream is a rich, targeted cream with botanical extracts that firms, tightens and deeply hydrates the skin. $52 CAD.\n\nFast shipping + 30-day money-back guarantee.\nShop now 👉 holistixhealth.ca\n\n#HolistixHealth #BodyCare #SelfCareRitual #Eleva #SkinCare #HealEvolveThrive",
   "image": "creatives/2026-11-29-eleva-firming-cream.png",
   "canvaDesign": "https://www.canva.com/design/DAHcC6veDK0",
@@ -7,5 +7,14 @@
     "eleva-firming-cream"
   ],
   "style": "botanical-card",
-  "dueAt": "2026-11-29T17:00:00-05:00"
+  "dueAt": "2026-11-29T17:00:00-05:00",
+  "buffer": [
+    {
+      "channel": "facebook",
+      "channelId": "6af80f3862b70b94b0297432",
+      "postId": "6b0a2dc041454797eaddbe7c",
+      "dueAt": "2026-11-29T22:00:00.000Z"
+    }
+  ],
+  "scheduledAt": "2026-11-28T01:26:24.988Z"
 }
